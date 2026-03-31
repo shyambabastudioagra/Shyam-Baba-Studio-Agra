@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Baba Studio Agra - Best Wedding Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-camera"></i>
+                    <h2>Shyam Baba Studio</h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#upload" class="upload-btn">Upload Photos</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Shyam Baba Studio Agra</h1>
+            <p>आपके हर खास पल को अमर बनाएं | Wedding Photography & Videography</p>
+            <div class="hero-buttons">
+                <a href="#gallery" class="btn-primary">Gallery देखें</a>
+                <a href="#contact" class="btn-secondary">अभी संपर्क करें</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">📸 हमारा Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Photos dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">हमारी Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-ring"></i>
+                    <h3>Wedding Photography</h3>
+                    <p>शादी के हर खूबसूरत पल को कैद करें</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Cinematic Videography</h3>
+                    <p>हाई क्वालिटी वेडिंग वीडियो</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Pre-Wedding Shoot</h3>
+                    <p>प्राकृतिक और खूबसूरत प्री-वेडिंग</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Album Designing</h3>
+                    <p>प्रोफेशनल मैट एंड ग्लॉसी एल्बम</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📞 संपर्क करें</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <a href="tel:8630019023">8630019023</a><br>
+                        <a href="tel:8630634305">8630634305</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>Near Khatu Shyam Mandir<br>Jeoni Mandi, Patel Nagar<br>Agra-4</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Timing</h3>
+                        <p>10 AM - 9 PM<br>(All Days Open)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Modal -->
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📤 नई Photos Upload करें</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="photoInput" multiple accept="image/*" required>
+                <button type="submit" class="btn-primary">Upload करें</button>
+            </form>
+            <p class="upload-info">हर 2-4 दिन बाद नई photos upload करें</p>
+        </div>
+    </div>
+
+    <!-- QR Code Section -->
+    <section class="qr-section">
+        <div class="container">
+            <h3>QR Code से Website खोलें</h3>
+            <div class="qr-container">
+                <canvas id="qrCode"></canvas>
+                <p>Scan करके सीधे gallery देखें</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shyam Baba Studio Agra. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://wa.me/918630019023" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:8630019023"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
